@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fe213aaa644a88caaed4cb4993dc3bc6",
+    "revision": "581eab314acf4313c15fbe341aebc9e6",
     "url": "/rfdprint.com/index.html"
   },
   {
-    "revision": "1404902d4727169029d2",
+    "revision": "5c4fa5e8d1c6b862d01f",
     "url": "/rfdprint.com/static/css/main.f1a65aa2.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/rfdprint.com/static/js/2.b41502e9.chunk.js"
   },
   {
-    "revision": "1404902d4727169029d2",
-    "url": "/rfdprint.com/static/js/main.6e4641d1.chunk.js"
+    "revision": "5c4fa5e8d1c6b862d01f",
+    "url": "/rfdprint.com/static/js/main.daf89c24.chunk.js"
   },
   {
     "revision": "6e96da76c6a194ddd8b0",
