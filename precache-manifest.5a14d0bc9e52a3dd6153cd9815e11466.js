@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "581eab314acf4313c15fbe341aebc9e6",
+    "revision": "95372a5e1f96537b5822b12ede737268",
     "url": "/rfdprint.com/index.html"
   },
   {
-    "revision": "5c4fa5e8d1c6b862d01f",
-    "url": "/rfdprint.com/static/css/main.f1a65aa2.chunk.css"
+    "revision": "2f56e990aaa28ccf2b93",
+    "url": "/rfdprint.com/static/css/main.913454b0.chunk.css"
   },
   {
     "revision": "2e0129063922e3bb197a",
     "url": "/rfdprint.com/static/js/2.b41502e9.chunk.js"
   },
   {
-    "revision": "5c4fa5e8d1c6b862d01f",
+    "revision": "2f56e990aaa28ccf2b93",
     "url": "/rfdprint.com/static/js/main.daf89c24.chunk.js"
   },
   {

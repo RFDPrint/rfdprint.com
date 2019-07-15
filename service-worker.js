@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/rfdprint.com/precache-manifest.ab6d214edb9c38fed605dfb9841c34f8.js"
+  "/rfdprint.com/precache-manifest.5a14d0bc9e52a3dd6153cd9815e11466.js"
 );
 
 self.addEventListener('message', (event) => {
