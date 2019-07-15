@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/rfdprint.com/static/css/main.2c7ec577.chunk.css",
+    "main.css": "/rfdprint.com/static/css/main.f16b0c21.chunk.css",
     "main.js": "/rfdprint.com/static/js/main.daf89c24.chunk.js",
     "main.js.map": "/rfdprint.com/static/js/main.daf89c24.chunk.js.map",
     "runtime~main.js": "/rfdprint.com/static/js/runtime~main.6a26465c.js",
@@ -8,9 +8,9 @@
     "static/js/2.b41502e9.chunk.js": "/rfdprint.com/static/js/2.b41502e9.chunk.js",
     "static/js/2.b41502e9.chunk.js.map": "/rfdprint.com/static/js/2.b41502e9.chunk.js.map",
     "index.html": "/rfdprint.com/index.html",
-    "precache-manifest.be076a92b26d5d9d6454801570d1ceee.js": "/rfdprint.com/precache-manifest.be076a92b26d5d9d6454801570d1ceee.js",
+    "precache-manifest.995e3011873c86af8d187f45faf5bdfe.js": "/rfdprint.com/precache-manifest.995e3011873c86af8d187f45faf5bdfe.js",
     "service-worker.js": "/rfdprint.com/service-worker.js",
-    "static/css/main.2c7ec577.chunk.css.map": "/rfdprint.com/static/css/main.2c7ec577.chunk.css.map",
+    "static/css/main.f16b0c21.chunk.css.map": "/rfdprint.com/static/css/main.f16b0c21.chunk.css.map",
     "static/media/logo.svg": "/rfdprint.com/static/media/logo.92d66bec.svg"
   }
 }
