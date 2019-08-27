@@ -1,0 +1,70 @@
+.wrapper {
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: 0 16px;
+
+	@mixin atMedium {
+		&--gradiant-shadow {
+			box-shadow: inset -7px -10px 84px -13px $lightGrey, 10px 10px 12px -1px $mainGrey;
+		}
+	}
+
+
+	&--shadow {
+		box-shadow: 10px 10px 12px -1px $mainGrey;
+	}
+
+	&--narrow {
+		max-width: 960px;
+	}
+
+	&--padding-large {
+		padding: 25px;
+	}
+
+	&--medium {
+		max-width: 976px;
+	}
+
+	&--narrow {
+		max-width: 470px;
+	}
+
+	&--no-padding-until-medium {
+		padding-left: 0;
+		padding-right: 0;
+
+		@mixin atMedium {
+			padding-left: 18px;
+			padding-right: 18px;
+		}
+	}
+
+	&--no-padding-until-large {
+		padding-left: 0;
+		padding-right: 0;
+
+		@mixin atLarge {
+			padding-left: 18px;
+			padding-right: 18px;
+		}
+	}
+
+	.wrapper {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	&--b-margin {
+		margin-bottom: 1rem;
+
+		@mixin atSmall {
+			margin-bottom: 3.875rem;
+		}
+	}
+
+	&--background-extra-light-grey {
+		background-color: $extraLightGrey;
+	}
+
+}

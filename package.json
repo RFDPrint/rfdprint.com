@@ -1,31 +1,54 @@
 {
-  "name": "rfdprint",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+	"name": "rfdprint",
+	"homepage": "https://rfdprint.github.io/rfdprint.com",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"@material-ui/core": "^4.2.0",
+		"gh-pages": "^2.0.1",
+		"normalize.css": "^8.0.1",
+		"react": "^16.8.6",
+		"react-dom": "^16.8.6",
+		"react-scripts": "3.0.1"
+	},
+	"scripts": {
+		"build:css": "postcss src/styles/main-src.css -o src/index.css",
+		"watch:css": "postcss src/styles/main-src.css -o src/index.css -w",
+		"build:vender-css": "postcss src/styles/vender-src.css -o src/vender.css",
+		"watch:vender-css": "postcss src/styles/vender-src.css -o src/vender.css -w",
+		"start": "npm-run-all -p watch:css watch:vender-css start-js",
+		"start-js": "react-scripts start",
+		"build-js": "react-scripts build",
+		"build": "npm-run-all build:css build:vender-css build-js",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build"
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"autoprefixer": "^9.6.1",
+		"npm-run-all": "^4.1.5",
+		"postcss-cli": "^6.1.3",
+		"postcss-color-function": "^4.1.0",
+		"postcss-hexrgba": "^1.0.1",
+		"postcss-import": "^12.0.1",
+		"postcss-mixins": "^6.2.1",
+		"postcss-nested": "^4.1.2",
+		"postcss-simple-vars": "^5.0.2"
+	}
 }
