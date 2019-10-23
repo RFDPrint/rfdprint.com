@@ -5,3 +5,6 @@
 @import '/base/_global.css';
 @import '/modules/_app.css';
 @import '/modules/_wrapper.css';
+@import '/modules/_approvals.css';
+@import '/modules/_design.css';
+@import '/modules/_document.css';

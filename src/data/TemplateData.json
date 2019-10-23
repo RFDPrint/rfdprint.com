@@ -1,0 +1,20 @@
+{
+	"leftColumn": [{
+			"header": "GENERAL TERMS",
+			"text": "<p>Advertising is based on a quantity of product(s) specified. <strong>Approximately QUANTITY PRODUCT will be distributed.<\/strong><\/p>\r\n            <p>Specified locations* have made verbal and\/or signed an agreement to display the approved product specified above on tables or counters during the normal course of their daily business, until the supply provided is exhausted or for approximately <strong>DURATION<\/strong>.<\/p>\r\n            <p>A non-refundable down payment of 50% is required to provide ad design. Final payment is due upon proof approval and BEFORE printing unless other terms are agreed upon.<\/p>\r\n            <p>RFDPrint is not responsible for reimbursement if the advertising distributor agreed upon goes out of business or changes ownership.<\/p>"
+		},
+		{
+			"header": "This is the header2",
+			"text": "This is the text2"
+		}
+	],
+	"rightColumn": [{
+			"header": "<h4 class=\"pdf-remove-space\"><strong>ACCREDITATION AND PROMOTION<\/strong><\/h4>",
+			"text": "<p>RFDPrint shall be entitled to place accreditation, as a hyperlink, logo or icon of and for RFDPrint in\r\n                the Deliverables on each page of the Final Deliverables. RFDPrint retains the right to reproduce,\r\n                publish and display the Deliverables in RFDPrint&rsquo;s portfolios and websites, in galleries, design\r\n                periodicals and other media or exhibits for the purposes of recognition of creative excellence or\r\n                professional advancement, and to be credited with authorship of the Deliverables in connection with\r\n                such uses.<\/p>"
+		},
+		{
+			"header": "This is the header right",
+			"text": "This is the text"
+		}
+	]
+}

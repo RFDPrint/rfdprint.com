@@ -1,0 +1,11 @@
+ {
+ 	"standardStringsToReplace": {
+ 		"PRODUCT": "Cool Plants",
+ 		"QUANTITY": "15",
+ 		"DURATION": "30 days"
+ 	},
+ 	"shortStringsToReplace": {
+ 		"PRODUCT": "Cool Small Plants",
+ 		"QUANTITY": "3"
+ 	}
+ }

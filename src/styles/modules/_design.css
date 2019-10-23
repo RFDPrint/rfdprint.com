@@ -1,0 +1,6 @@
+.design {
+		&__image {
+			margin: auto;
+			display: block;
+		}
+	}
