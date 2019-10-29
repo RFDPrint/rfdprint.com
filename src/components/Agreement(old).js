@@ -4,12 +4,11 @@ import {
 	useParams,
 	withRouter
 } from "react-router-dom";
-import dbcloud from "../firebase/dbcloud";
 
 /*Components*/
 import Document from "./Document";
 import NotFoundPage from "./NotFoundPage";
-import DesignImage from "./DesignImage";
+import Design from "./Design";
 import DocumentHeader from "./DocumentHeader";
 
 /*Template Data*/
@@ -19,7 +18,13 @@ import templateData from "../data/TemplateData.json";
 import { parse_colomun_data, template_dynamic_input } from "./util";
 import { firebaseFindParam } from "../firebase/dataRetrieval";
 
-class Design extends Component {
+import { connect } from "react-redux";
+
+const mapStateToProps = state => {
+	return { agreements: state.agreements };
+};
+
+class Agreement extends Component {
 	constructor(props) {
 		super(props);
 
@@ -33,58 +38,14 @@ class Design extends Component {
 		};
 	}
 
-	firebaseFindParam = id => {
-		let aprvDocument = [];
-		let templateParts = {};
-		let docInformation = {};
-		const db = dbcloud.firestore();
-
-		db.collection("designs")
-			.where("id", "==", id)
-			.limit(1)
-			.get()
-			.then(snapshot => {
-				if (snapshot.empty) {
-					console.log("No matching documents.");
-					this.setState({
-						redirect: true
-					});
-					return;
-				}
-
-				snapshot.forEach(doc => {
-					aprvDocument.push(doc.data());
-				});
-				templateParts = {
-					type: aprvDocument[0].templateType,
-					title: aprvDocument[0].title
-				};
-				docInformation = {
-					id: aprvDocument[0].id,
-					imageURL: aprvDocument[0].imageURL
-				};
-				this.setState({
-					signature: aprvDocument,
-					documentInfo: docInformation,
-					templateParts: templateParts
-				});
-			})
-			.catch(err => {
-				console.log("Error getting documents", err);
-			});
-	};
-
 	getUniqueDocumentData() {
 		const { id } = this.props.match.params;
-		this.firebaseFindParam(id);
+		firebaseFindParam(this.setState.bind(this), id, "agreements");
 	}
 
 	componentDidMount() {
 		this.getUniqueDocumentData();
-		template_dynamic_input(
-			this.setState.bind(this),
-			this.state.templateParts.type
-		);
+		template_dynamic_input(this.setState.bind(this), "standard");
 	}
 
 	render() {
@@ -93,16 +54,36 @@ class Design extends Component {
 		docInfo = this.state.documentInfo;
 		templatePart = this.state.templateParts;
 
+		const Agreement = ({ agreements }) => (
+			<div>
+				<ul>
+					{agreements.map(doc => (
+						<li key={doc.id}>{doc.title}</li>
+					))}
+				</ul>
+			</div>
+		);
+
 		if (!this.state.redirect) {
 			return (
 				<div key="doc.id">
 					<div className="wrapper">
 						<DocumentHeader
-							title={templatePart.title}
+							title={this.props.agreements.title}
 							subtitle={templatePart.subTitle}
 							approverName={docInfo.name}
 						/>
-						<DesignImage imageURL={docInfo.imageURL} />
+						<Document
+							key={docInfo.id}
+							leftCol={parse_colomun_data(
+								this.state.data.leftColumn,
+								this.state.templateReplaceStrings
+							)}
+							rightCol={parse_colomun_data(
+								this.state.data.rightColumn,
+								this.state.templateReplaceStrings
+							)}
+						/>
 					</div>
 				</div>
 			);
@@ -115,4 +96,10 @@ class Design extends Component {
 		}
 	}
 }
-export default withRouter(Design);
+
+export default withRouter(
+	connect(
+		mapStateToProps,
+		null
+	)(Agreement)
+);

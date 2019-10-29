@@ -1,5 +1,26 @@
 import React from "react";
 import sanitizeHtml from "sanitize-html";
+import templateReplace from "../data/StringsToReplace.json";
+
+export const template_dynamic_input = (setState, templateType) => {
+	const standardReplace = templateReplace.standardStringsToReplace;
+	const shortReplace = templateReplace.shortStringsToReplace;
+	let templateStringsToReplace = {};
+	switch (templateType) {
+		case "standard":
+			templateStringsToReplace = standardReplace;
+			break;
+		case "short":
+			templateStringsToReplace = shortReplace;
+
+			break;
+		default:
+			templateStringsToReplace = standardReplace;
+	}
+	setState({
+		templateReplaceStrings: templateStringsToReplace
+	});
+};
 
 export const processHTML = html => {
 	const unprocessed = html;
@@ -11,11 +32,13 @@ export const processHTML = html => {
 };
 
 export const replaceAll = (str, mapObj) => {
-	let result = new RegExp(Object.keys(mapObj).join("|"), "g");
+	if (mapObj) {
+		let result = new RegExp(Object.keys(mapObj).join("|"), "g");
 
-	return str.replace(result, function(matched) {
-		return mapObj[matched];
-	});
+		return str.replace(result, function(matched) {
+			return mapObj[matched];
+		});
+	}
 };
 
 const template_string_replace = (content, templateReplaceStrings) => {

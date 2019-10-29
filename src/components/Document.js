@@ -1,17 +1,18 @@
 import React, { Component } from "react";
+import DocumentHeader from "./DocumentHeader";
+import DocumentContent from "./DocumentContent";
+export default class Document extends Component {
+	constructor(props) {
+		super(props);
 
-export default class DocColumn extends Component {
+		this.state = {};
+	}
+
 	render() {
 		return (
 			<div>
-				<div className="document">
-					<div className="document__left-col">
-						{this.props.leftCol}
-					</div>
-					<div className="document__right-col">
-						{this.props.rightCol}
-					</div>
-				</div>
+				<DocumentHeader />
+				<DocumentContent />
 			</div>
 		);
 	}
