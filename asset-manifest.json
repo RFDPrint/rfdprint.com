@@ -1,16 +1,23 @@
 {
   "files": {
-    "main.css": "/rfdprint.com/static/css/main.44410844.chunk.css",
-    "main.js": "/rfdprint.com/static/js/main.4fc1fd46.chunk.js",
-    "main.js.map": "/rfdprint.com/static/js/main.4fc1fd46.chunk.js.map",
-    "runtime~main.js": "/rfdprint.com/static/js/runtime~main.6a26465c.js",
-    "runtime~main.js.map": "/rfdprint.com/static/js/runtime~main.6a26465c.js.map",
-    "static/js/2.b41502e9.chunk.js": "/rfdprint.com/static/js/2.b41502e9.chunk.js",
-    "static/js/2.b41502e9.chunk.js.map": "/rfdprint.com/static/js/2.b41502e9.chunk.js.map",
+    "main.css": "/rfdprint.com/static/css/main.0bbd49f0.chunk.css",
+    "main.js": "/rfdprint.com/static/js/main.98eacc71.chunk.js",
+    "main.js.map": "/rfdprint.com/static/js/main.98eacc71.chunk.js.map",
+    "runtime-main.js": "/rfdprint.com/static/js/runtime-main.a6bf4b9f.js",
+    "runtime-main.js.map": "/rfdprint.com/static/js/runtime-main.a6bf4b9f.js.map",
+    "static/js/2.9673a2dc.chunk.js": "/rfdprint.com/static/js/2.9673a2dc.chunk.js",
+    "static/js/2.9673a2dc.chunk.js.map": "/rfdprint.com/static/js/2.9673a2dc.chunk.js.map",
     "index.html": "/rfdprint.com/index.html",
-    "precache-manifest.0a22f9a9390f116f3793fcc962b06e88.js": "/rfdprint.com/precache-manifest.0a22f9a9390f116f3793fcc962b06e88.js",
+    "precache-manifest.ac3ea16c190d8f9dbe74d8f0b45dbece.js": "/rfdprint.com/precache-manifest.ac3ea16c190d8f9dbe74d8f0b45dbece.js",
     "service-worker.js": "/rfdprint.com/service-worker.js",
-    "static/css/main.44410844.chunk.css.map": "/rfdprint.com/static/css/main.44410844.chunk.css.map",
+    "static/css/main.0bbd49f0.chunk.css.map": "/rfdprint.com/static/css/main.0bbd49f0.chunk.css.map",
+    "static/js/2.9673a2dc.chunk.js.LICENSE": "/rfdprint.com/static/js/2.9673a2dc.chunk.js.LICENSE",
     "static/media/logo.svg": "/rfdprint.com/static/media/logo.92d66bec.svg"
-  }
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a6bf4b9f.js",
+    "static/js/2.9673a2dc.chunk.js",
+    "static/css/main.0bbd49f0.chunk.css",
+    "static/js/main.98eacc71.chunk.js"
+  ]
 }
